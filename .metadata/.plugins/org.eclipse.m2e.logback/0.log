@@ -254,3 +254,4 @@
 2026-07-14 15:26:50,273 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\GichelleMiracleBurwe\OneDrive - IBM\Documents\java-training\jakartaee-hello-world-intern-batch3\src\test\resources
 2026-07-14 15:28:37,532 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\GichelleMiracleBurwe\OneDrive - IBM\Documents\java-training\jakartaee-hello-world-intern-batch3\src\main\resources
 2026-07-14 15:28:37,536 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\GichelleMiracleBurwe\OneDrive - IBM\Documents\java-training\jakartaee-hello-world-intern-batch3\src\test\resources
+2026-07-14 15:35:35,633 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
