@@ -14,23 +14,29 @@ import jakarta.inject.Named;
 @RequestScoped
 public class ReportListBean {
 	private List<ReportDto> reports;
-	
+
 	@Inject
 	private ReportRepository reportRepository;
-	
+
 	@PostConstruct
 	public void init() {
 		reports = reportRepository.findAll();
 	}
-	
+
 	public List<ReportDto> getReports() {
 		return reports;
 	}
-	
+
 	public void setReports(List<ReportDto> reports) {
 		this.reports = reports;
 	}
-	
+
+	public void updateReport(ReportDto report) {
+		if (reports != null && report != null) {
+			reportRepository.update(report);
+		}
+	}
+
 	public void deleteReport(ReportDto report) {
 		if (reports != null && report != null) {
 			reports.remove(report);

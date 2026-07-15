@@ -1,6 +1,9 @@
 package org.ibm.jakarta.dto;
 
-public class ReportDto {
+import java.io.Serializable;
+
+public class ReportDto implements Serializable {
+	private static final long serialVersionUID = 1L;
 	private static Long nextId = (long) 1;
 
 	private Long id;
@@ -19,6 +22,10 @@ public class ReportDto {
 
 	public Long getId() {
 		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getTitle() {

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Edit Report</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+          href="https://unpkg.com/primeflex@latest/primeflex.css" />
+    <style type="text/css">
+        :root {
+            --ink-900: #1a2332;
+            --ink-800: #263344;
+            --ink-600: #4a5a70;
+            --ink-400: #8494a8;
+            --ink-200: #dde3ea;
+            --ink-100: #eef1f5;
+            --surface: #ffffff;
+            --bg: #f2f4f7;
+            --accent: #3b6ef6;
+            --accent-dark: #2c56cf;
+            --success: #16a34a;
+            --success-dark: #128a3e;
+            --danger: #e0374a;
+            --danger-dark: #c22a3b;
+            --radius-lg: 14px;
+            --radius-md: 10px;
+            --radius-sm: 7px;
+            --shadow-sm: 0 1px 3px rgba(20, 30, 45, 0.06), 0 1px 2px rgba(20, 30, 45, 0.08);
+            --shadow-md: 0 4px 14px rgba(20, 30, 45, 0.08);
+            --shadow-lift: 0 8px 20px rgba(20, 30, 45, 0.12);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--ink-800);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ---------- Header ---------- */
+        .header {
+            background: linear-gradient(120deg, var(--ink-900) 0%, var(--ink-800) 55%, #33455e 100%);
+            color: #ffffff;
+            padding: 30px 0;
+            box-shadow: 0 4px 16px rgba(20, 30, 45, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::after {
+            content: "";
+            position: absolute;
+            top: -60%;
+            right: -5%;
+            width: 260px;
+            height: 260px;
+            background: radial-gradient(circle, rgba(59, 110, 246, 0.25), transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .header h2 {
+            margin: 0;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+        }
+
+        .header .subtitle {
+            margin-top: 4px;
+            font-size: 13.5px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.65);
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ---------- Card ---------- */
+        .card {
+            background: var(--surface);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--ink-100);
+            padding: 28px;
+            margin: 28px 0;
+        }
+
+        /* ---------- Fields ---------- */
+        .field {
+            margin-bottom: 22px;
+        }
+
+        .field label {
+            display: block;
+            font-weight: 600;
+            font-size: 13.5px;
+            margin-bottom: 7px;
+            color: var(--ink-600);
+        }
+
+        .field input.ui-inputtext,
+        .field textarea.ui-inputtextarea {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid var(--ink-200);
+            border-radius: var(--radius-sm);
+            padding: 11px 13px;
+            font-size: 14px;
+            font-family: inherit;
+            color: var(--ink-800);
+            background: var(--surface);
+            transition: border-color 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .field input.ui-inputtext:focus,
+        .field textarea.ui-inputtextarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(59, 110, 246, 0.15);
+        }
+
+        .field .ui-message {
+            display: block;
+            margin-top: 6px;
+            font-size: 12.5px;
+            font-weight: 600;
+            color: var(--danger) !important;
+        }
+
+        /* ---------- Buttons ---------- */
+        .ui-button.p-button,
+        .ui-button {
+            border-radius: var(--radius-sm) !important;
+            padding: 0 24px !important;
+            height: 40px !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            font-size: 14px !important;
+            font-weight: 600 !important;
+            line-height: 1 !important;
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark)) !important;
+            border: none !important;
+            color: #ffffff !important;
+            box-shadow: 0 3px 10px rgba(59, 110, 246, 0.3) !important;
+            transition: transform 0.18s ease, box-shadow 0.18s ease !important;
+        }
+
+        .ui-button:hover {
+            box-shadow: 0 6px 16px rgba(59, 110, 246, 0.4) !important;
+            transform: translateY(-2px);
+        }
+
+        .ui-button:active {
+            transform: translateY(0);
+        }
+
+        .ui-button.secondary-button {
+            background: var(--surface) !important;
+            border: 1px solid var(--ink-200) !important;
+            color: var(--ink-800) !important;
+            box-shadow: none !important;
+            margin-right: 10px;
+        }
+
+        .ui-button.secondary-button:hover {
+            background: var(--ink-100) !important;
+            border-color: var(--ink-400) !important;
+            box-shadow: none !important;
+            transform: translateY(-1px);
+        }
+
+        /* ---------- Responsive ---------- */
+        @media (max-width: 640px) {
+            .container { padding: 0 14px; }
+            .header { padding: 22px 0; }
+            .header h2 { font-size: 21px; }
+            .card { padding: 20px; }
+        }
+    </style>
+</h:head>
+<h:body>
+
+    <f:metadata>
+        <f:viewParam name="id" value="#{reportEditBean.id}" />
+        <f:viewAction action="#{reportEditBean.load()}" />
+    </f:metadata>
+
+    <div class="header">
+        <div class="container">
+            <h2>Edit Report</h2>
+            <div class="subtitle">Update the details of this report</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h:form>
+                <div class="ui-fluid">
+                    <div class="field">
+                        <h:outputLabel for="title-input" value="Title" />
+                        <p:inputText id="title-input"
+                                     value="#{reportEditBean.title}" />
+                        <h:message for="title-input" />
+                    </div>
+                    <div class="field">
+                        <h:outputLabel for="detail-input" value="Detail" />
+                        <p:inputTextarea id="detail-input"
+                                         value="#{reportEditBean.detail}"
+                                         rows="6" />
+                        <h:message for="detail-input" />
+                    </div>
+                </div>
+                <div class="flex justify-content-end">
+                    <p:commandButton value="Cancel"
+                                     ajax="false"
+                                     immediate="true"
+                                     styleClass="secondary-button"
+                                     action="#{reportEditBean.cancel()}" />
+                    <p:commandButton value="Update"
+                                     ajax="false"
+                                     action="#{reportEditBean.update()}" />
+                </div>
+            </h:form>
+        </div>
+    </div>
+
+</h:body>
+</html>
