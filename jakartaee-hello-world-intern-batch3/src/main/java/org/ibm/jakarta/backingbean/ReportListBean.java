@@ -34,7 +34,7 @@ public class ReportListBean {
 	public void deleteReport(ReportDto report) {
 		if (reports != null && report != null) {
 			reports.remove(report);
-			//reportRepository.delete(report);
+			reportRepository.delete(report);
 		}
 	}
 }

@@ -18,4 +18,10 @@ public class ReportRepository {
 	public void create(ReportDto report) {
 		reports.add(report);
 	}
+	
+	public void delete(ReportDto report) {
+		reports.remove(report);
+		report.setTitle(null);
+		report.setDetail(null);
+	}
 }
