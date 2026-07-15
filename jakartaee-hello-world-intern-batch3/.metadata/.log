@@ -1,0 +1,334 @@
+!SESSION 2026-07-15 10:47:04.046 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Users\GichelleMiracleBurwe\BURWELL_GICHELLE_JAKARTAEE\jakartaee-hello-world-intern-batch3
+
+!ENTRY org.eclipse.emf.ecore 2 0 2026-07-15 10:47:08.244
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2026-07-15 10:47:08.761
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lsp4e.debug 4 0 2026-07-15 10:47:09.357
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.lsp4e.debug [640]
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.debug; bundle-version="[0.21.0,0.22.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.debug; bundle-version="0.21.0.v20230517-2120"
+       org.eclipse.lsp4j.debug [642]
+         Unresolved requirement: Import-Package: com.google.gson; version="[2.9.1,2.11.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc.debug; bundle-version="[0.21.0,0.22.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc.debug; bundle-version="0.21.0.v20230517-2120"
+       org.eclipse.lsp4j.jsonrpc.debug [644]
+         Unresolved requirement: Import-Package: com.google.gson; version="[2.9.1,2.11.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.21.0,0.22.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.21.0.v20230517-2120"
+       org.eclipse.lsp4j.jsonrpc [643]
+         Unresolved requirement: Import-Package: com.google.gson; version="[2.9.1,2.11.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.wildwebdeveloper 4 0 2026-07-15 10:47:09.375
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wildwebdeveloper [690]
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4e.debug; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.lsp4e.debug; bundle-version="0.15.3.202308111329"; singleton:="true"
+       org.eclipse.lsp4e.debug [640]
+         Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.21.0,0.22.0)"
+           -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.21.0.v20230517-2120"
+              org.eclipse.lsp4j.jsonrpc [643]
+                Unresolved requirement: Import-Package: com.google.gson; version="[2.9.1,2.11.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="0.12.0"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.21.0.v20230517-2120"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.jboss.tools.openshift.cdk.server 4 0 2026-07-15 10:47:09.413
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.openshift.cdk.server [901]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.openshift.common.ui
+    -> Bundle-SymbolicName: org.jboss.tools.openshift.common.ui; bundle-version="3.24.100.v20231103-1505"; singleton:="true"
+       org.jboss.tools.openshift.common.ui [904]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.openshift.core
+           -> Bundle-SymbolicName: org.jboss.tools.openshift.core; bundle-version="3.24.100.v20231103-1505"; singleton:="true"
+              org.jboss.tools.openshift.core [905]
+                Unresolved requirement: Require-Bundle: org.eclipse.lsp4e.debug
+                  -> Bundle-SymbolicName: org.eclipse.lsp4e.debug; bundle-version="0.15.3.202308111329"; singleton:="true"
+                     org.eclipse.lsp4e.debug [640]
+                       Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.21.0,0.22.0)"
+                         -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.21.0.v20230517-2120"
+                            org.eclipse.lsp4j.jsonrpc [643]
+                              Unresolved requirement: Import-Package: com.google.gson; version="[2.9.1,2.11.0)"
+                Unresolved requirement: Require-Bundle: org.eclipse.wildwebdeveloper
+                  -> Bundle-SymbolicName: org.eclipse.wildwebdeveloper; bundle-version="1.1.1.202308101949"; singleton:="true"
+                     org.eclipse.wildwebdeveloper [690]
+                       Unresolved requirement: Require-Bundle: org.eclipse.lsp4e.debug; bundle-version="0.9.0"
+                         -> Bundle-SymbolicName: org.eclipse.lsp4e.debug; bundle-version="0.15.3.202308111329"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="0.12.0"
+                         -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.21.0.v20230517-2120"
+  Unresolved requirement: Require-Bundle: org.jboss.tools.openshift.ui; bundle-version="3.1.0"
+    -> Bundle-SymbolicName: org.jboss.tools.openshift.ui; bundle-version="3.24.100.v20231103-1505"; singleton:="true"
+       org.jboss.tools.openshift.ui [909]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.openshift.common.ui; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.jboss.tools.openshift.common.ui; bundle-version="3.24.100.v20231103-1505"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.jboss.tools.openshift.core
+    -> Bundle-SymbolicName: org.jboss.tools.openshift.core; bundle-version="3.24.100.v20231103-1505"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.jboss.tools.openshift.common.ui 4 0 2026-07-15 10:47:09.424
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.openshift.common.ui [904]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.openshift.core
+    -> Bundle-SymbolicName: org.jboss.tools.openshift.core; bundle-version="3.24.100.v20231103-1505"; singleton:="true"
+       org.jboss.tools.openshift.core [905]
+         Unresolved requirement: Require-Bundle: org.eclipse.lsp4e.debug
+           -> Bundle-SymbolicName: org.eclipse.lsp4e.debug; bundle-version="0.15.3.202308111329"; singleton:="true"
+              org.eclipse.lsp4e.debug [640]
+                Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.21.0,0.22.0)"
+                  -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.21.0.v20230517-2120"
+                     org.eclipse.lsp4j.jsonrpc [643]
+                       Unresolved requirement: Import-Package: com.google.gson; version="[2.9.1,2.11.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.wildwebdeveloper
+           -> Bundle-SymbolicName: org.eclipse.wildwebdeveloper; bundle-version="1.1.1.202308101949"; singleton:="true"
+              org.eclipse.wildwebdeveloper [690]
+                Unresolved requirement: Require-Bundle: org.eclipse.lsp4e.debug; bundle-version="0.9.0"
+                  -> Bundle-SymbolicName: org.eclipse.lsp4e.debug; bundle-version="0.15.3.202308111329"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="0.12.0"
+                  -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.21.0.v20230517-2120"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.jboss.tools.openshift.core 4 0 2026-07-15 10:47:09.429
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.openshift.core [905]
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4e.debug
+    -> Bundle-SymbolicName: org.eclipse.lsp4e.debug; bundle-version="0.15.3.202308111329"; singleton:="true"
+       org.eclipse.lsp4e.debug [640]
+         Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.21.0,0.22.0)"
+           -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.21.0.v20230517-2120"
+              org.eclipse.lsp4j.jsonrpc [643]
+                Unresolved requirement: Import-Package: com.google.gson; version="[2.9.1,2.11.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.wildwebdeveloper
+    -> Bundle-SymbolicName: org.eclipse.wildwebdeveloper; bundle-version="1.1.1.202308101949"; singleton:="true"
+       org.eclipse.wildwebdeveloper [690]
+         Unresolved requirement: Require-Bundle: org.eclipse.lsp4e.debug; bundle-version="0.9.0"
+           -> Bundle-SymbolicName: org.eclipse.lsp4e.debug; bundle-version="0.15.3.202308111329"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="0.12.0"
+           -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.21.0.v20230517-2120"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.jboss.tools.openshift.js 4 0 2026-07-15 10:47:09.436
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.openshift.js [908]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.openshift.core; bundle-version="3.3.2"
+    -> Bundle-SymbolicName: org.jboss.tools.openshift.core; bundle-version="3.24.100.v20231103-1505"; singleton:="true"
+       org.jboss.tools.openshift.core [905]
+         Unresolved requirement: Require-Bundle: org.eclipse.lsp4e.debug
+           -> Bundle-SymbolicName: org.eclipse.lsp4e.debug; bundle-version="0.15.3.202308111329"; singleton:="true"
+              org.eclipse.lsp4e.debug [640]
+                Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.21.0,0.22.0)"
+                  -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.21.0.v20230517-2120"
+                     org.eclipse.lsp4j.jsonrpc [643]
+                       Unresolved requirement: Import-Package: com.google.gson; version="[2.9.1,2.11.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.wildwebdeveloper
+           -> Bundle-SymbolicName: org.eclipse.wildwebdeveloper; bundle-version="1.1.1.202308101949"; singleton:="true"
+              org.eclipse.wildwebdeveloper [690]
+                Unresolved requirement: Require-Bundle: org.eclipse.lsp4e.debug; bundle-version="0.9.0"
+                  -> Bundle-SymbolicName: org.eclipse.lsp4e.debug; bundle-version="0.15.3.202308111329"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="0.12.0"
+                  -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.21.0.v20230517-2120"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.jboss.tools.openshift.ui 4 0 2026-07-15 10:47:09.445
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.openshift.ui [909]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.openshift.common.ui; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.jboss.tools.openshift.common.ui; bundle-version="3.24.100.v20231103-1505"; singleton:="true"
+       org.jboss.tools.openshift.common.ui [904]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.openshift.core
+           -> Bundle-SymbolicName: org.jboss.tools.openshift.core; bundle-version="3.24.100.v20231103-1505"; singleton:="true"
+              org.jboss.tools.openshift.core [905]
+                Unresolved requirement: Require-Bundle: org.eclipse.lsp4e.debug
+                  -> Bundle-SymbolicName: org.eclipse.lsp4e.debug; bundle-version="0.15.3.202308111329"; singleton:="true"
+                     org.eclipse.lsp4e.debug [640]
+                       Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.21.0,0.22.0)"
+                         -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.21.0.v20230517-2120"
+                            org.eclipse.lsp4j.jsonrpc [643]
+                              Unresolved requirement: Import-Package: com.google.gson; version="[2.9.1,2.11.0)"
+                Unresolved requirement: Require-Bundle: org.eclipse.wildwebdeveloper
+                  -> Bundle-SymbolicName: org.eclipse.wildwebdeveloper; bundle-version="1.1.1.202308101949"; singleton:="true"
+                     org.eclipse.wildwebdeveloper [690]
+                       Unresolved requirement: Require-Bundle: org.eclipse.lsp4e.debug; bundle-version="0.9.0"
+                         -> Bundle-SymbolicName: org.eclipse.lsp4e.debug; bundle-version="0.15.3.202308111329"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="0.12.0"
+                         -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.21.0.v20230517-2120"
+  Unresolved requirement: Require-Bundle: org.jboss.tools.openshift.core; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.jboss.tools.openshift.core; bundle-version="3.24.100.v20231103-1505"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY ch.qos.logback.classic 1 0 2026-07-15 10:47:11.589
+!MESSAGE Logback config file: C:\Users\GichelleMiracleBurwe\BURWELL_GICHELLE_JAKARTAEE\jakartaee-hello-world-intern-batch3\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-07-15 10:47:27.518
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\GichelleMiracleBurwe'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.258
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.868
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.868
+!MESSAGE Could not send USER event 'Anonymous ID: 467bade3-a322-4388-a789-d2e9a0656454': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.872
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.874
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.876
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.878
+!MESSAGE Could not send USER event 'Anonymous ID: 467bade3-a322-4388-a789-d2e9a0656454': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.880
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.880
+!MESSAGE Could not send ACTION event 'browser': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.884
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.886
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.888
+!MESSAGE Could not send USER event 'Anonymous ID: 467bade3-a322-4388-a789-d2e9a0656454': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.890
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.892
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.892
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.894
+!MESSAGE Could not send USER event 'Anonymous ID: 467bade3-a322-4388-a789-d2e9a0656454': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.895
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.897
+!MESSAGE Could not send ACTION event 'installed': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.899
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.901
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.903
+!MESSAGE Could not send USER event 'Anonymous ID: 467bade3-a322-4388-a789-d2e9a0656454': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.905
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.905
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.907
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.909
+!MESSAGE Could not send USER event 'Anonymous ID: 467bade3-a322-4388-a789-d2e9a0656454': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.909
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2026-07-15 10:47:31.909
+!MESSAGE Could not send ACTION event 'showOnStartup': no analytics instance present.

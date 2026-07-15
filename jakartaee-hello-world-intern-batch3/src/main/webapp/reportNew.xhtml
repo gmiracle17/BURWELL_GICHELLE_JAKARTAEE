@@ -1,41 +1,132 @@
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:p="http://primefaces.org/ui">
-	<h:head>
-	    <title>Reports List</title>
-	    <link rel="stylesheet"
-	          href="https://unpkg.com/primeflex@latest/primeflex.css" />
-	</h:head>
-	<h:body>
-	    <h2>New Report</h2>
-	    <h:form>
-	        <div class="ui-fluid">
-	            <div class="field">
-	                <h:outputLabel for="title-input" value="Title" />
-	                <p:inputText id="title-input"
-	                             value="#{reportNewBean.title}" />
-	                <h:message for="title-input" style="color: red" />
-	            </div>
-	            <div class="field">
-	                <h:outputLabel for="detail-input" value="Detail" />
-	                <p:inputTextarea id="detail-input"
-	                                 value="#{reportNewBean.detail}"
-	                                 rows="6" />
-	                <h:message for="detail-input" style="color: red" />
-	            </div>
-	        </div>
-	        <div class="flex justify-content-end">
-	            <p:commandButton value="Create"
-	                             ajax="false"
-	                             action="#{reportNewBean.create()}" />
-	        </div>
-	    </h:form>
-	    <div>
-	        <h:outputText value="#{reportNewBean.title}" />
-	    </div>
-	    <div>
-	        <h:outputText value="#{reportNewBean.detail}"
-	                      style="white-space: pre-wrap;" />
-	    </div>
-	</h:body>
+<h:head>
+    <title>New Report</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+          href="https://unpkg.com/primeflex@latest/primeflex.css" />
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #2c3e50;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: #ffffff;
+            padding: 24px 0;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .header h2 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .field {
+            margin-bottom: 20px;
+        }
+
+        .field label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #34495e;
+        }
+
+        .field input.ui-inputtext,
+        .field textarea.ui-inputtextarea {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            padding: 10px 12px;
+            font-size: 14px;
+        }
+
+        .field input.ui-inputtext:focus,
+        .field textarea.ui-inputtextarea:focus {
+            outline: none;
+            border-color: #2c3e50;
+            box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.15);
+        }
+
+        .field .ui-message {
+            display: block;
+            margin-top: 6px;
+            font-size: 13px;
+        }
+
+        .ui-button.p-button,
+        .ui-button {
+            border-radius: 6px !important;
+            padding: 10px 22px !important;
+            font-weight: 600;
+            background-color: #2c3e50 !important;
+            border-color: #2c3e50 !important;
+        }
+
+        .ui-button:hover {
+            background-color: #1a252f !important;
+            border-color: #1a252f !important;
+        }
+    </style>
+</h:head>
+<h:body>
+
+    <div class="header">
+        <div class="container">
+            <h2>New Report</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h:form>
+                <div class="ui-fluid">
+                    <div class="field">
+                        <h:outputLabel for="title-input" value="Title" />
+                        <p:inputText id="title-input"
+                                     value="#{reportNewBean.title}" />
+                        <h:message for="title-input" style="color: #e74c3c" />
+                    </div>
+                    <div class="field">
+                        <h:outputLabel for="detail-input" value="Detail" />
+                        <p:inputTextarea id="detail-input"
+                                         value="#{reportNewBean.detail}"
+                                         rows="6" />
+                        <h:message for="detail-input" style="color: #e74c3c" />
+                    </div>
+                </div>
+                <div class="flex justify-content-end">
+                    <p:commandButton value="Create"
+                                     ajax="false"
+                                     action="#{reportNewBean.create()}" />
+                </div>
+            </h:form>
+        </div>
+    </div>
+
+</h:body>
 </html>

@@ -6,6 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\GichelleMiracleBurwe\BURWELL_GICHELLE_JAKARTAEE"/>
 			<item value="C:\Users\GichelleMiracleBurwe\OneDrive - IBM\Documents\java-training\jakartaee-hello-world-intern-batch3"/>
 		</list>
 		<section name="SmartImportWizard.dialogBounds">
@@ -15,5 +16,20 @@
 			<item key="DIALOG_HEIGHT" value="633"/>
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 		</section>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="341"/>
+		<item key="DIALOG_Y_ORIGIN" value="7"/>
+		<item key="DIALOG_WIDTH" value="613"/>
+		<item key="DIALOG_HEIGHT" value="587"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="341"/>
+		<item key="DIALOG_Y_ORIGIN" value="131"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
 	</section>
 </section>

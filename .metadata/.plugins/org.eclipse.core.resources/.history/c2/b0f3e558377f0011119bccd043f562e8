@@ -1,5 +1,0 @@
-package org.ibm.jakarta.dto;
-
-public class ReportDto {
-
-}

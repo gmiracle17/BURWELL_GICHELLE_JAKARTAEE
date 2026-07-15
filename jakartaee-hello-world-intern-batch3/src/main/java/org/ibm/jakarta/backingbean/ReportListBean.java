@@ -30,4 +30,11 @@ public class ReportListBean {
 	public void setReports(List<ReportDto> reports) {
 		this.reports = reports;
 	}
+	
+	public void deleteReport(ReportDto report) {
+		if (reports != null && report != null) {
+			reports.remove(report);
+			//reportRepository.delete(report);
+		}
+	}
 }
