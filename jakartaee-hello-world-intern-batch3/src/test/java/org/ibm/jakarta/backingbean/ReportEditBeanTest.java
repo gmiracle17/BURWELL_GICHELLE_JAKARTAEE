@@ -22,7 +22,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
  * Unit tests for the ReportEditBean class.
  * Tests the edit functionality including loading, updating, and canceling report edits.
  * 
- * @author IBM Jakarta EE Team
+ * @author Gichelle Burwell
  * @version 1.0
  */
 @ExtendWith(MockitoExtension.class)
