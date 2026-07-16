@@ -20,7 +20,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
  * Unit tests for the ReportNewBean class.
  * Tests the creation of new reports and validation of report data.
  * 
- * @author IBM Jakarta EE Team
+ * @author Gichelle Burwell
  * @version 1.0
  */
 @ExtendWith(MockitoExtension.class)
