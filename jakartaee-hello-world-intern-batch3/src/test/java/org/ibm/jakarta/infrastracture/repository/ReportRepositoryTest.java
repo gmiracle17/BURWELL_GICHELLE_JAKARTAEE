@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
  * Unit tests for the ReportRepository class.
  * Tests all CRUD operations and query methods for managing ReportDto objects.
  * 
- * @author IBM Jakarta EE Team
+ * @author Gichelle Burwell
  * @version 1.0
  */
 class ReportRepositoryTest {
