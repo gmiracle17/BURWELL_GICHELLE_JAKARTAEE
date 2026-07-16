@@ -26,7 +26,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
  * Unit tests for the ReportListBean class.
  * Tests the list functionality including initialization, updates, and deletions of reports.
  * 
- * @author IBM Jakarta EE Team
+ * @author Gichelle Burwell
  * @version 1.0
  */
 @ExtendWith(MockitoExtension.class)
