@@ -16,7 +16,7 @@ import org.junit.jupiter.api.Test;
  * Unit tests for the ReportDto class.
  * Tests constructors, getters, setters, ID generation, and Serializable implementation.
  * 
- * @author IBM Jakarta EE Team
+ * @author Gichelle Burwell
  * @version 1.0
  */
 class ReportDtoTest {
